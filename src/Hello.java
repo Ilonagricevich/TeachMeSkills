@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Hello {
     public static void main(String[] args) {
         System.out.println();
-       // checkThenumber();
+        checkThenumber();
         System.out.println();
-        //deleteNumbers();
+        deleteNumbers();
         System.out.println();
-        //outputminmax();
+        outputminmax();
         System.out.println();
-        //outputMinMaxAverageOfArrayNumbers();
+        outputMinMaxAverageOfArrayNumbers();
     }
 
     static void checkThenumber() {
@@ -22,43 +22,49 @@ public class Hello {
         int userNumber = Number.nextInt();
         int index = 0;
         int ArrayElement;
+        int place=0;
 
-        for (index = 0; index < numbers.length; ++index) {
+        for (index = 0; index < numbers.length; index++) {
             ArrayElement = numbers[index];
-            if (ArrayElement == userNumber) {
-                System.out.println("This number is in the array");
-            } else {
+            if (ArrayElement == userNumber)
+            place++;}
+        if (place>0){
+                System.out.println("This number is in the array");}
+        else {
                 System.out.println("This number is not in the array");
             }
 
 
             Number.close();
         }
-    }
+
 
     static void deleteNumbers() {
-        int[] numbers = new int[]{10, 20, 30, 5};
-
+        int[] numbers = new int[]{6, 10, 128, 1010};
         System.out.print("Please, enter your number: ");
         Scanner Number = new Scanner(System.in);
         int userNumber = Number.nextInt();
         int index = 0;
         int ArrayElement;
+        int place = Arrays.binarySearch(numbers, userNumber);
+        int index2 =0;
 
-        for (index = 0; index < numbers.length; ++index) {
+        if (place<0){
+            System.out.println ("This number is not in the array");}
 
-            ArrayElement = numbers[index];
-            if (ArrayElement != userNumber) {
-                System.out.println(numbers[index]);
+       for (index = 0; index < numbers.length; index++) {
+       index2=index;
+       ArrayElement = numbers[index];
+       if (ArrayElement != userNumber && place>=0) {
+       System.out.println(numbers[index2]);}
 
-            } else {
-                System.out.println("This number is not in the array");
 
-            }
+       }
 
-        }
-
+          Number.close();
     }
+
+
 
     static void outputminmax() {
         System.out.print("Please, enter your number: ");
