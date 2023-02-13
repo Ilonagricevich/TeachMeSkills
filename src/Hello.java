@@ -3,7 +3,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hello {
-    public static void main(String[] args) {
+
+        public static void main(String[] args) {
         System.out.println();
         checkThenumber();
         System.out.println();
@@ -15,6 +16,10 @@ public class Hello {
     }
 
     static void checkThenumber() {
+
+    /*Создайте массив целых чисел. Напишете программу, которая выводит сообщение о том, входит ли заданное число
+    в массив или нет. Пусть число для поиска задается с консоли (класс Scanner).*/
+
         int[] numbers = new int[]{10, 20, 30, 5};
 
         System.out.print("Please, enter your number: ");
@@ -40,6 +45,11 @@ public class Hello {
 
 
     static void deleteNumbers() {
+
+    /*Создайте массив целых чисел. Удалите все вхождения заданного числа из массива. Пусть число задается с
+    консоли (класс Scanner). Если такого числа нет - выведите сообщения об этом. В результате должен быть
+    новый массив без указанного числа.*/
+
         int[] numbers = new int[]{6, 10, 128, 1010};
         System.out.print("Please, enter your number: ");
         Scanner Number = new Scanner(System.in);
@@ -67,6 +77,12 @@ public class Hello {
 
 
     static void outputminmax() {
+
+    /* Создайте и заполните массив случайным числами и выведете максимальное, минимальное и среднее значение.
+    Для генерации случайного числа используйте метод Math.random(). Пусть будет возможность создавать массив произвольного
+    размера. Пусть размер массива вводится с консоли.*/
+
+
         System.out.print("Please, enter your number: ");
         Scanner arraysize = new Scanner (System.in);
         int[] numbers = new int[arraysize.nextInt()];
@@ -101,6 +117,10 @@ public class Hello {
         }
 
     static void outputMinMaxAverageOfArrayNumbers() {
+    /*Создайте 2 массива из 5 чисел. Выведите массивы на консоль в двух отдельных строках. Посчитайте среднее
+    арифметическое элементов каждого массива и сообщите, для какого из массивов это значение оказалось больше (либо
+    сообщите, что их средние арифметические равны).*/
+
 
         int[] array1 = new int[] {21,4,6,7,10};
         int [] array2 = new int [] {5,6,7,8,9};
