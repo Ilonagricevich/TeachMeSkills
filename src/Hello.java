@@ -109,9 +109,9 @@ public class Hello {
                 max = numbers[index];}}
 
 
-        System.out.println ("Average value of the array numbers are: " + average/numbers.length);
-        System.out.println ("Maximal value of the array numbers are: " + max);
-        System.out.println ("Minimal value of the array numbers are: " + min);
+        System.out.println ("Average value of the array numbers is: " + average/numbers.length);
+        System.out.println ("Maximal value of the array numbers is: " + max);
+        System.out.println ("Minimal value of the array numbers is: " + min);
         arraysize.close();
 
         }
