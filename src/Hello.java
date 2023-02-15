@@ -26,12 +26,11 @@ public class Hello {
         Scanner Number = new Scanner(System.in);
         int userNumber = Number.nextInt();
         int index = 0;
-        int ArrayElement;
+
         int place=0;
 
         for (index = 0; index < numbers.length; index++) {
-            ArrayElement = numbers[index];
-            if (ArrayElement == userNumber)
+            if (numbers[index] == userNumber)
             place++;}
         if (place>0){
                 System.out.println("This number is in the array");}
@@ -139,13 +138,13 @@ public class Hello {
         for (int index2 = 0; index2<array2.length; index2++) {
             average2 += array2[index2];}
 
-        if (average1>average2){
+        if ((average1/array1.length)>(average2/array1.length)){
             System.out.println ("The first array has the highest value of the arithmetic mean.");}
 
-        else if (average1<average2){
+        else if ((average1/array1.length)<(average2/array2.length)){
             System.out.println ("The second array has the highest value of the arithmetic mean.");}
 
-        else if (average1==average2){
+        else if ((average1/array1.length)==(average2/array2.length)){
             System.out.println ("Values of arrays arithmetic means are equal.");}
     }
         }
