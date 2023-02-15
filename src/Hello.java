@@ -50,7 +50,7 @@ public class Hello {
         int b = 4;
         int c = 7;
 
-        if ((a + b) < c || (a + c) < b || (b + c) < a) {
+        if ((a + b) <= c || (a + c) <= b || (b + c) <= a) {
             System.out.println("Такого треугольника не существует");
         } else {
             System.out.println("Такой треугольник существует");
