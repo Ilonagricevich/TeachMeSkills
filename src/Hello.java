@@ -12,7 +12,7 @@ public class Hello {
         System.out.println();
         outputminmax();
         System.out.println();
-        outputMinMaxAverageOfArrayNumbers();
+     // outputMinMaxAverageOfArrayNumbers();
     }
 
     static void checkThenumber() {
@@ -49,29 +49,36 @@ public class Hello {
     консоли (класс Scanner). Если такого числа нет - выведите сообщения об этом. В результате должен быть
     новый массив без указанного числа.*/
 
-        int[] numbers = new int[]{6, 10, 128, 1010};
+        int[] numbers = new int[]{6, 10, 128, 1010, 5, 6};
+
         System.out.print("Please, enter your number: ");
         Scanner Number = new Scanner(System.in);
-        int userNumber = Number.nextInt();
+        int Number2 = Number.nextInt();
+        Number.close();
         int index = 0;
-        int ArrayElement;
-        int place = Arrays.binarySearch(numbers, userNumber);
-        int index2 =0;
+        int counter = 0;
+        int index2;
 
-        if (place<0){
-            System.out.println ("This number is not in the array");}
+        for (index = 0; index < numbers.length; index++) {
+            if (numbers[index] == Number2) {
+                counter++;
+            }
+        }
 
-       for (index = 0; index < numbers.length; index++) {
-       index2=index;
-       ArrayElement = numbers[index];
-       if (ArrayElement != userNumber && place>=0) {
-       System.out.println(numbers[index2]);}
+        int numbers2[] = new int[numbers.length - counter];
 
+        for (index = 0, index2=0; index < numbers.length; index++) {
+            if (numbers[index] != Number2 && counter>0){
+                numbers2[index2] = numbers[index];
+                index2++;
+                }}
 
-       }
+        if (counter == 0) {
 
-          Number.close();
-    }
+                System.out.println("This number is not in the array");}
+        else {
+                System.out.println(Arrays.toString(numbers2));}
+        }
 
 
 
@@ -108,7 +115,7 @@ public class Hello {
                 max = numbers[index];}}
 
 
-        System.out.println ("Average value of the array numbers is: " + average/numbers.length);
+        System.out.println ("Average value of the array numbers is: " + (double)(average/numbers.length));
         System.out.println ("Maximal value of the array numbers is: " + max);
         System.out.println ("Minimal value of the array numbers is: " + min);
         arraysize.close();
