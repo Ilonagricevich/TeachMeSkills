@@ -14,6 +14,5 @@ public class MyMain {
         card2.accountInfo();
         card3.accountInfo();
 
-
     }
 }

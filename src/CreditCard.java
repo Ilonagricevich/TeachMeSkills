@@ -19,7 +19,8 @@ public class CreditCard {
         System.out.print ("Please, enter the withdrawal amount from the card with the account number "+accountNumber+": ");
         Scanner UserAmount = new Scanner (System.in);
         double UserAmount2 = UserAmount.nextDouble();
-        accountAmount = accountAmount - UserAmount2;}
+        accountAmount = accountAmount - UserAmount2;
+        UserAmount.close();}
 
     public void accountInfo() {
         System.out.println ("The card account number is: "+ accountNumber);
