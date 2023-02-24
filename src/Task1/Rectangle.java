@@ -6,4 +6,9 @@ public class Rectangle extends Figure{
     }
     public Rectangle(double a, double b, double c, double R) {
         super(a, b, c, R);
-}}
+}
+
+
+}
+
+
