@@ -34,13 +34,13 @@ public class Figure {
         return  R;
     }
 
-    public void calculateTheArea() {
+    public double calculateTheArea() {
         double area= a*b;
-return;
+return area;
     }
-    public void calculateThePerimeter() {
+    public double calculateThePerimeter() {
        double perimeter= (a + b) * 2;
-return;
+return perimeter;
     }
 
 }

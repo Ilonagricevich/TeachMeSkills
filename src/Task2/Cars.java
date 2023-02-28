@@ -1,7 +1,5 @@
 package Task2;
 
-import javax.swing.*;
-
 public class Cars {
 
     private String model;
@@ -54,7 +52,7 @@ public class Cars {
         this.maxSpeed = maxSpeed;
     }
 
-    static void defineTheOldestCare(Cars[] cars, Cars[] cars2) {
+    static Cars defineTheOldestCare(Cars[] cars, Cars[] cars2) {
         Cars theOldestCar = cars[0];
         for (int i = 0; i < cars.length; i++) {
             if (theOldestCar.maxSpeed < cars[i].maxSpeed) {
@@ -69,7 +67,7 @@ public class Cars {
         return theOldestCar;
     }
 
-    public void defineTheFastestCar(Cars[] cars, Cars[] cars2) {
+    public Cars defineTheFastestCar(Cars[] cars, Cars[] cars2) {
         Cars theFastestCar = cars[0];
         for (int i = 0; i < cars.length; i++) {
             if (theFastestCar.maxSpeed > cars[i].maxSpeed) {

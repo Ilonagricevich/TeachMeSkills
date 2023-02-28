@@ -10,13 +10,15 @@ public class Triangle extends Figure{
     }
 
     @Override
-    public void calculateThePerimeter() {
+    public double calculateThePerimeter() {
         double perimeter = this.getA()+this.getB()+this.getC();
+        return perimeter;
     }
 
     @Override
-    public void calculateTheArea() {
+    public double calculateTheArea() {
         double p = (this.getA()+this.getB()+this.getC())/2;
         double area = Math.sqrt(p*(p-this.getA())*(p-this.getB())*(p-this.getC()));
+        return area;
     }
 }

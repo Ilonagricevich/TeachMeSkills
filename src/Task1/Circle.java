@@ -8,12 +8,14 @@ public class Circle extends Figure{
         super(a, b, c, R);
     }
     @Override
-    public void calculateThePerimeter() {
+    public double calculateThePerimeter() {
         double perimeter = 2*Math.PI*this.getR();
-    }
+    return perimeter; }
+
 
     @Override
-    public void calculateTheArea() {
+    public double calculateTheArea() {
                 double area = 2*Math.PI*this.getR()*this.getR();
+        return area;
     }
 }

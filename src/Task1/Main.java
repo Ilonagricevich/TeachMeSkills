@@ -2,8 +2,7 @@ package Task1;
 
 public class Main {
 
-    // данный код не запускается, но ошибку я не смогла найти. Видео с урока не помогло, а готовое решение я брать не хочу. Выслала что есть
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
         Figure[] figure = {new Triangle(3, 4, 5, 0),
                 new Circle(0, 0, 0, 3),
