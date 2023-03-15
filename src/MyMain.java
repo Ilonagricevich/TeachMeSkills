@@ -4,7 +4,8 @@ public class MyMain {
     public static void main(String[] args) {
         System.out.print("Please, enter your login: ");
         Scanner Login = new Scanner(System.in);
-        String UserLogin = Login.next();
+        String UserLogin = Login.nextLine();
+
 
         int counter = UserLogin.indexOf(' ');
         if (counter < 0 && UserLogin.length() < 19) {
@@ -15,14 +16,14 @@ public class MyMain {
         }
         System.out.print("Please, enter your password: ");
         Scanner Password = new Scanner(System.in);
-        String UsPass = Password.next();
+        String UsPass = Password.nextLine();
 
         int counter1 = UsPass.indexOf(' ');
         int num=0;
         if (UsPass.indexOf("0") > 0 || UsPass.indexOf("1") > 0 || UsPass.indexOf("2") > 0 || UsPass.indexOf("3") > 0 || UsPass.indexOf("4") > 0) {
             num++;
-        if (UsPass.indexOf("5")>0 || UsPass.indexOf("6")>0 || UsPass.indexOf("7")>0 || UsPass.indexOf("8")>0 || UsPass.indexOf("9")>0){
-            num++;}}
+            if (UsPass.indexOf("5")>0 || UsPass.indexOf("6")>0 || UsPass.indexOf("7")>0 || UsPass.indexOf("8")>0 || UsPass.indexOf("9")>0){
+                num++;}}
 
 
         if (counter1<0 && UsPass.length()<19 && num>0) {
@@ -40,6 +41,7 @@ public class MyMain {
         Login.close();
         Password.close();
         Password2.close();
+
 
 
     }
