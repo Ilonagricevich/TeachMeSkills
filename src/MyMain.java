@@ -6,10 +6,10 @@ public class MyMain {
       outputNumbers ();
       replaceLetters ();
       outputLetters ();
-      outputLetters2 ();
+     outputLetters2 ();
       containsLetters ();
-      startsWithNumbers ();
-      endsWithNumbers ();
+     startsWithNumbers ();
+     endsWithNumbers ();
     }
     public static void outputNumbers (){
         //Вывести на экран в одну строку два первых блока по 4 цифры
@@ -21,7 +21,8 @@ public class MyMain {
         String str1 = DocumentNumber.substring(0,4);
         String str2 = DocumentNumber.substring(9,13);
         System.out.println("The first two blocks of 4 digits are: " +str1+str2);
-        Number.close();
+
+
     }
     public static void replaceLetters (){
         //Вывести на экран номер документа, но блоки из трех букв заменить
@@ -35,7 +36,7 @@ public class MyMain {
         String str2 = DocumentNumber.substring(8,14);
         String str3 = DocumentNumber.substring(17,22);
         System.out.println("New number of document is: " +str1+"***"+str2+"***"+str3);
-        Number.close();
+
     }
 
     public static void outputLetters (){
@@ -48,11 +49,11 @@ public class MyMain {
 
         String str1 = DocumentNumber.substring(5,8);
         String str2 = DocumentNumber.substring(14,17);
-        String str3 = DocumentNumber.substring(20,21);
-        String str4 = DocumentNumber.substring(22,23);
+        String str3 = DocumentNumber.substring(19,20);
+        String str4 = DocumentNumber.substring(21,22);
         System.out.println("New number of document is: " +str1.toLowerCase()+"/"+str2.toLowerCase()+"/"+str3.toLowerCase()+
                 "/"+str4.toLowerCase());
-        Number.close();
+
    }
     public static void outputLetters2 (){
        // Вывести на экран буквы из номера документа в формате
@@ -72,7 +73,7 @@ public class MyMain {
         String Str = String.valueOf(DocumentNumber);
 
         System.out.println("Letters: "+ Str.toUpperCase());
-        Number.close();
+
 
     }
 
@@ -90,7 +91,7 @@ public class MyMain {
                 System.out.println("This string contains abc");}
         if (DocumentNumber.indexOf("abc")<0 && DocumentNumber.indexOf("ABC")<0) {
             System.out.println("This string contains other symbols");}
-        Number.close();
+
         }
 
     public static void startsWithNumbers () {
@@ -101,7 +102,7 @@ public class MyMain {
         String DocumentNumber = Number.next();
 
         System.out.println ("This string starts with 555: "+DocumentNumber.startsWith("555"));
-        Number.close();
+
     }
 
     public static void endsWithNumbers () {
@@ -112,6 +113,7 @@ public class MyMain {
         String DocumentNumber = Number.next();
 
         System.out.println ("This string ends with 1a2b: "+DocumentNumber.endsWith("1a2b"));
+
         Number.close();
     }
 
