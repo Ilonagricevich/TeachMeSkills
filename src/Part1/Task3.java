@@ -7,16 +7,7 @@ public class Task3 {
         System.out.print("Enter 1 or 2: ");
         Scanner scanner = new Scanner(System.in);
         int userNumber = scanner.nextInt();
-        if (userNumber == 1) {
-            String user = scanner.nextLine();
 
-            Interface<String, String> reverseTheString = x -> {
-                String.valueOf(new StringBuilder(x).reverse());
-                return x;
-            };
-
-            System.out.println(reverseTheString.apply(user));
-        }
         if (userNumber == 2) {
 
             Interface<Integer, Integer> factorial = x -> {
@@ -26,5 +17,20 @@ public class Task3 {
                 }
                 return result;
             };
-            System.out.println(factorial.apply(scanner.nextInt()));
-    }}}
+            System.out.println(factorial.apply(scanner.nextInt()));}
+            else if (userNumber == 1) {
+
+                Interface<String, String> reverseTheString = x -> {
+                    String result = "";
+                    for (int i = 0; i < x.length(); i++) {
+                        result = x.charAt(i) + result;
+                    }
+                    return result;
+                };
+            Scanner scanner1 = new Scanner(System.in);
+                String user = scanner1.nextLine();
+                System.out.println(reverseTheString.apply(user));
+            scanner1.close();
+            }
+
+    }}
