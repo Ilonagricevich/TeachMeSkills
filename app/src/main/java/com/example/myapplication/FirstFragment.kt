@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.databinding.FragmentFirstBinding
 
+
 open class Numbers () {
 open var x = 10
 
