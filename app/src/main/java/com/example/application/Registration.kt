@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.application.databinding.FragmentFirstBinding
 import com.example.application.databinding.RegistrationBinding
 
 class Registration : Fragment() {
@@ -28,12 +27,20 @@ class Registration : Fragment() {
 
         binding.button1.setOnClickListener {
             Toast.makeText(context,"Please, fill in the fields",Toast.LENGTH_SHORT).show()
-
-            findNavController().navigate(R.id.action_registration_to_FirstFragment)
+            buttonEnabled()
         }
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }
+
+    private fun buttonEnabled() {
+        if (binding.passwordText.text.length >=8) {
+            binding.button1.isEnabled = true
+            findNavController().navigate(R.id.action_registration_to_FirstFragment)}
+        else {
+            binding.button1.isEnabled = false
+        }}
+
+    override fun onDestroyView() {
+    super.onDestroyView()
+    _binding = null
+}}
+
