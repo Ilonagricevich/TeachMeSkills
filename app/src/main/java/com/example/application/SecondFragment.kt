@@ -6,11 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.application.databinding.FragmentSecondBinding
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
@@ -34,8 +33,28 @@ class SecondFragment : Fragment() {
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+
+        }
+        initViews()
+            }
+    private fun initViews() {
+
+        initRecycler()
+    }
+    private fun initRecycler() {
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = RecyclerAdapter(listOfElements())
         }
     }
+
+    private fun listOfElements(): List<String> {
+        val data = mutableListOf<String>()
+        (0..100).forEach { i -> data.add("$i item") }
+        return data
+    }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
