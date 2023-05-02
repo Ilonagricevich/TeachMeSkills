@@ -14,4 +14,40 @@
     <string name="password">Enter your password</string>
     <string name="done">Login</string>
     <string name="registration">Registration</string>
+    <string-array name="animals">
+        <item>Lion</item>
+        <item>Tiger</item>
+        <item>Zebra</item>
+        <item>Wolf</item>
+    </string-array>
+
+    <string-array name="animals_list_View">
+        <item>Lion</item>
+        <item>Tiger</item>
+        <item>Zebra</item>
+        <item>Elephant</item>
+        <item>Leopard</item>
+        <item>Kangaroo</item>
+        <item>Giraffe</item>
+        <item>Bear</item>
+    </string-array>
+    <string-array name="description">
+        <item>A species of predatory mammals, one of five members of the genus Panthera (Panthera),
+            belonging to the subfamily of big cats in the cat family.</item>
+        <item>Predator from the cat family, panther genus, class of mammals.</item>
+        <item> A subgenus of the equine genus, including the species Burchell\'s zebra, Grevy's zebra, and mountain zebra </item>
+        <item>The largest animal living on land. He is huge and very heavy, although he eats only plant
+            foods - leaves and branches of trees, grass, fruits.</item>
+        <item>The leopard is a large, beautiful cat with a muscular, flexible body. The length of the body
+            is on average from 90 to 180 cm, depending on the breed of the animal.</item>
+        <item> Kangaroo is a marsupial mammal from the kangaroo family.</item>
+        <item> The giraffe is the tallest animal in the world. The height (growth) of the giraffe reaches 5.5 - 6.1 meters,
+            a third of which falls on his famous neck.</item>
+        <item> The bear is the largest predator on earth. This animal belongs to the class of mammals, order of carnivores,
+            family of bears, genus bears</item>
+    </string-array>
+
+    <string name="about_animals">Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development. As of 2022, 2.16 million living animal species have been described—of which around 1.05 million are insects, over 36,000 are fishes, around 11,700 are reptiles, over 11,100 are birds, and 6,596 mammals—but it has been estimated there are around 7.77 million animal species in total. Animals range in length from 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft). They have complex interactions with each other and their environments, forming intricate food webs. The scientific study of animals is known as zoology.</string>
+    <string name="animals">About animals</string>
+
 </resources>

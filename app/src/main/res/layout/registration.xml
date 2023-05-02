@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fragments.FeedFragment">
+    tools:context=".SecondFragment">
 
     <TextView
         android:id="@+id/hello_text"
@@ -41,10 +41,10 @@
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="540dp"
         app:layout_constraintStart_toStartOf="@+id/login_text"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="540dp"/>
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
