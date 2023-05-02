@@ -1,0 +1,35 @@
+package fragments
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.example.application.databinding.SecondTestFragmentBinding
+
+class SecondTestFragment : Fragment() {
+
+    private lateinit var binding: SecondTestFragmentBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = SecondTestFragmentBinding.inflate(inflater, container, false)
+
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        initButton()
+    }
+
+    private fun initButton() {
+        binding.secondButton.setOnClickListener {
+            Toast.makeText(context, "This is the second fragment", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
