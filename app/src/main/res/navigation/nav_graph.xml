@@ -3,36 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/Registration">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.application.FirstFragment"
+        android:id="@+id/NewsFragment"
+        android:name="fragments.NewsFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/news_fragment">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_NewsFragment_to_FeedFragment"
+            app:destination="@id/FeedFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.application.SecondFragment"
+        android:id="@+id/FeedFragment"
+        android:name="fragments.FeedFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/feed_fragment">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_FeedFragment_to_NewsFragment"
+            app:destination="@id/NewsFragment" />
     </fragment>
     <fragment
         android:id="@+id/Registration"
-        android:name="com.example.application.Registration"
+        android:name="fragments.LoginFragment"
         android:label="@string/registration"
-        tools:layout="@layout/registration">
+        tools:layout="@layout/login_fragment">
 
         <action
-            android:id="@+id/action_registration_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_LoginFragment_to_NewsFragment"
+            app:destination="@id/NewsFragment" />
     </fragment>
 </navigation>
