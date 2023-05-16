@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/NewsFragment"
-        android:name="fragments.NewsFragment"
+        android:name="presentation.fragments.NewsFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/news_fragment">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/FeedFragment"
-        android:name="fragments.FeedFragment"
+        android:name="presentation.fragments.FeedFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/feed_fragment">
 
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/Registration"
-        android:name="fragments.LoginFragment"
+        android:name="presentation.fragments.LoginFragment"
         android:label="@string/registration"
         tools:layout="@layout/login_fragment">
 

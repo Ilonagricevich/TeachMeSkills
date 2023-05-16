@@ -1,4 +1,4 @@
-package adapters
+package presentation.adapters
 
     import android.view.LayoutInflater
     import android.view.View
@@ -6,10 +6,10 @@ package adapters
     import android.widget.TextView
     import androidx.recyclerview.widget.RecyclerView
     import com.example.application.R
-    import elements.Model
+    import domain.models.DomainPostsList
 
 
-class RecyclerAdapter(private val items: List<Model>,
+class RecyclerAdapter(private val items: DomainPostsList,
                       private val event: (View) -> Unit) :
     RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>() {
 
@@ -29,13 +29,13 @@ class RecyclerAdapter(private val items: List<Model>,
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.apply {
-            titleTextView.text = items[position].title
-            descriptionTextView.text = items[position].description
+            titleTextView.text = items.posts[position].title
+            descriptionTextView.text = items.posts[position].description
 
         }
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return items.posts.size
     }
 }
