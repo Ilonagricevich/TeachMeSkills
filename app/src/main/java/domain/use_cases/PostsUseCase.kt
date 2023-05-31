@@ -10,6 +10,6 @@ import javax.inject.Singleton
 class PostsUseCase @Inject constructor(
     private val postRepository: PostRepository
 ) {
-    fun getPosts() = PostsRepositoryIMPL().getPosts().toDomainPostList()
+    fun getPosts() = postRepository.getPosts().toDomainPostList()
 
 }

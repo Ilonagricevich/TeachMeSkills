@@ -9,7 +9,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-open class NewViewModelInfo @Inject constructor(
+    class NewViewModelInfo @Inject constructor(
     private val getPostsInfoUseCase: GetPostsInfoUseCase
 ) : ViewModel() {
 
